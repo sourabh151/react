@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	font-size: 10px;
+}
+.heading {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+.heading h1 {
+	font-size: 4rem;
+	position: relative;
+	padding: 2rem;
+}
+.heading h1::after {
+	content: "";
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 25%;
+	position: absolute;
+	border-bottom: solid #49a6e9;
+	border-bottom-width: thick;
+}
+
+.tour {
+	width: 56%;
+	margin: 4rem auto;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	font-size: 1.6rem;
+}
+.tour:hover{
+	box-shadow: 2px 2px 2px 2px #ccc,
+	4px 4px 4px 4px #ddd,
+	8px 8px 4px 4px #eee;
+}
+.tour img {
+	width: 100%;
+	height: 32rem;
+	object-fit: cover;
+}
+.tour .info {
+	padding: 4rem;
+	background-color: #fff;
+}
+.tour .title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.tour .title h2 {
+	letter-spacing: 1px;
+	font-size: 1.6rem;
+}
+.tour .title .price {
+	color: #49a6e9;
+	background-color: #ebf7ff;
+	padding: 0rem 1.5rem;
+	border-radius: 0.25rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.tour .info p {
+	color: #617d98;
+}
+.hidden {
+	display: none;
+}
+.read {
+	letter-spacing: 1px;
+	color: #49a6e9;
+	background-color: #fff;
+	border: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+.center {
+	display: flex;
+	justify-content: center;
+}
+.not-interested {
+	color: #bb2525;
+	border-color: #bb2525;
+	background-color: white;
+	padding: 0.3rem 3rem;
+	font-size: 1.8rem;
+	border-radius: 0.5rem;
+	border-width: 1px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
