@@ -96,3 +96,8 @@
 	letter-spacing: 1px;
 	cursor: pointer;
 }
+@media only screen and (max-width:500px){
+  .tour{
+    width:96%;
+  }
+}
