@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+  background-color: #f1f5f8;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: auto;
+  width: 90vw;
+}
+.title {
+  padding-top: 2rem;
+}
+.title h1 {
+  font-size: 5rem;
+  padding: 1rem;
+  position: relative;
+}
+.title h1::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 25%;
+  border-bottom: thick solid #c59d5f;
+}
+.category-nav {
+  padding: 5rem 1rem;
+  width: 90%;
+}
+.category-ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.category-li button {
+  background-color: #f1f5f8;
+  color: #c59d5f;
+  border: none;
+  font-size: 2rem;
+  transition: 0.6s all;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+}
+.category-li button:hover,
+.category-li button:focus {
+  background-color: #c59d5f;
+  color: #f1f5f8;
+}
+.item {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 4rem;
+}
+.dish-img {
+  width: 90%;
+  height: 30rem;
+  object-fit: cover;
+  border: thick solid #c59d5f;
+  border-radius: 0.5rem;
+}
+.dish {
+  width: 90%;
+  padding-top: 2rem;
+}
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #617d98;
+}
+.dish-title {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #102a42;
+}
+.dish-price {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #c59d5f;
+}
+.dish-desc {
+  font-size: 1.8rem;
+  color: #617d98;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    padding-bottom: 10rem;
+  }
+  .item {
+    grid-template-columns: 1fr 2fr;
+  }
+  .dish-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  .dish {
+    padding-top: 0;
+  }
+  .category-nav {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-bottom: 20rem;
+  }
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+  .category-nav {
+    width: 30%;
+  }
+}
